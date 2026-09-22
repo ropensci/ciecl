@@ -16,6 +16,7 @@ stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://
 status](https://www.r-pkg.org/badges/version/ciecl)](https://CRAN.R-project.org/package=ciecl)
 [![GitHub
 release](https://img.shields.io/github/v/release/ropensci/ciecl)](https://github.com/ropensci/ciecl/releases)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22906553.svg)](https://doi.org/10.5281/zenodo.22906553)
 [![R-CMD-check](https://github.com/ropensci/ciecl/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/ropensci/ciecl/actions/workflows/R-CMD-check.yaml)
 [![Downloads](https://cranlogs.r-pkg.org/badges/grand-total/ciecl)](https://cran.r-project.org/package=ciecl)
 [![Coverage](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/ropensci/ciecl/main/badges/coverage.json)](https://github.com/ropensci/ciecl/actions/workflows/test-coverage.yaml)
