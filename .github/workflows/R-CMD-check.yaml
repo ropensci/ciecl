@@ -45,9 +45,23 @@ jobs:
           http-user-agent: ${{ matrix.config.http-user-agent }}
           use-public-rspm: true
 
+      # Workaround: el binario P3M de stringdist para macOS requiere libomp,
+      # ausente en el R de CRAN del runner (OpenMP deshabilitado). Se fuerza
+      # compilar desde fuente. Retirar este step y la variable cuando P3M
+      # publique un binario compatible con el toolchain CRAN macOS.
+      - name: Force stringdist from source on macOS
+        if: runner.os == 'macOS'
+        run: echo "MAC_SOURCE_PKGS=stringdist?source" >> $GITHUB_ENV
+        shell: bash
+
+      # Mantener any::rcmdcheck en la primera línea: setup-r-dependencies
+      # parsea extra-packages con strsplit y una línea inicial vacía rompería
+      # la resolución en Windows/Linux (donde MAC_SOURCE_PKGS está vacía).
       - uses: r-lib/actions/setup-r-dependencies@v2
         with:
-          extra-packages: any::rcmdcheck
+          extra-packages: |
+            any::rcmdcheck
+            ${{ env.MAC_SOURCE_PKGS }}
           needs: check
 
       - uses: r-lib/actions/check-r-package@v2
