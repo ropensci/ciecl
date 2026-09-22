@@ -1,9 +1,4 @@
-url: https://rodotasso.github.io/ciecl/
-
-template:
-  bootstrap: 5
-  light-switch: true
-  lang: es
+url: https://docs.ropensci.org/ciecl
 
 navbar:
   title: "ciecl"

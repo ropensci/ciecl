@@ -1,6 +1,6 @@
 Package: ciecl
 Title: International Classification of Diseases 'ICD-10'/'ICD-11' for Chile
-Version: 0.9.8
+Version: 1.0.0
 Authors@R:
     c(person("Rodolfo", "Tasso Suazo",
              email = "rtasso@uchile.cl",
@@ -9,7 +9,13 @@ Authors@R:
                          "Grupo de Ciencia de Datos para Salud Pública, Escuela de Salud Pública, U. de Chile")),
       person("Francisca", "Jofre",
              role = "ctb",
-             comment = "Package logo design"))
+             comment = "Package logo design"),
+      person("Ma\u00eblle", "Salmon",
+             role = "rev",
+             comment = "Ma\u00eblle reviewed the package (v. 0.9.8) for rOpenSci, see <https://github.com/ropensci/software-review/issues/765>"),
+      person("Yanina", "Bellini",
+             role = "rev",
+             comment = "Yanina reviewed the package (v. 0.9.8) for rOpenSci, see <https://github.com/ropensci/software-review/issues/765>"))
 Description: Tools for working with the International Classification of
     Diseases ('ICD-10' Chile official 'MINSAL'/'DEIS' v2018). Includes
     optimized 'SQL' search with 'SQLite', fuzzy matching of medical terms
@@ -45,9 +51,9 @@ Suggests:
     knitr,
     rmarkdown
 VignetteBuilder: knitr
-URL: https://rodotasso.github.io/ciecl/,
-    https://github.com/Rodotasso/ciecl
-BugReports: https://github.com/Rodotasso/ciecl/issues
+URL: https://docs.ropensci.org/ciecl,
+    https://github.com/ropensci/ciecl
+BugReports: https://github.com/ropensci/ciecl/issues
 Config/testthat/edition: 3
 Config/Needs/website: pkgdown, vcr
 Language: en, es

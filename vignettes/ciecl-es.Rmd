@@ -39,7 +39,7 @@ Para la versión de desarrollo, que incluye las funcionalidades más recientes a
 
 ```{r eval=FALSE}
 # Requiere el paquete pak para una gestión eficiente de dependencias
-pak::pak("RodoTasso/ciecl")
+pak::pak("ropensci/ciecl")
 ```
 
 ## Consultas SQL directas al catálogo
@@ -176,6 +176,6 @@ del Ministerio de Salud:
 
 ## Colaboración y Soporte
 
-- Reporte de errores o sugerencias: <https://github.com/RodoTasso/ciecl/issues>
-- Código fuente y documentación: <https://github.com/RodoTasso/ciecl>
+- Reporte de errores o sugerencias: <https://github.com/ropensci/ciecl/issues>
+- Código fuente y documentación: <https://github.com/ropensci/ciecl>
 

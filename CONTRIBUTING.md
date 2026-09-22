@@ -4,7 +4,7 @@ Gracias por tu interés en contribuir a `ciecl`. Este documento describe cómo p
 
 ## Reportar bugs
 
-Si encuentras un bug, por favor abre un [issue en GitHub](https://github.com/RodoTasso/ciecl/issues) con:
+Si encuentras un bug, por favor abre un [issue en GitHub](https://github.com/ropensci/ciecl/issues) con:
 
 - Descripción clara del problema
 - Código reproducible mínimo ([reprex](https://reprex.tidyverse.org/))
@@ -70,11 +70,11 @@ Los PR que no cumplan estas condiciones pueden recibir solicitud de cambios o se
 
 ## Código de conducta
 
-Al participar en este proyecto, aceptas cumplir con el [Código de Conducta](CODE_OF_CONDUCT.md).
+Al participar en este proyecto, aceptas cumplir con el [Código de Conducta de rOpenSci](https://ropensci.org/code-of-conduct/).
 
 ## Preguntas
 
-Para preguntas generales, abre un [issue](https://github.com/RodoTasso/ciecl/issues) usando la plantilla **Consulta**, que aplica la etiqueta `question` automáticamente.
+Para preguntas generales, abre un [issue](https://github.com/ropensci/ciecl/issues) usando la plantilla **Consulta**, que aplica la etiqueta `question` automáticamente.
 
 ---
 
@@ -84,7 +84,7 @@ Thank you for your interest in contributing to `ciecl`. This document describes 
 
 ## Reporting bugs
 
-If you find a bug, please open an [issue on GitHub](https://github.com/RodoTasso/ciecl/issues) with:
+If you find a bug, please open an [issue on GitHub](https://github.com/ropensci/ciecl/issues) with:
 
 - A clear description of the problem
 - A minimal reproducible example ([reprex](https://reprex.tidyverse.org/))
@@ -150,8 +150,8 @@ PRs that do not meet these conditions may be asked for revisions or closed.
 
 ## Code of Conduct
 
-By participating in this project, you agree to abide by the [Code of Conduct](CODE_OF_CONDUCT.md).
+By participating in this project, you agree to abide by the [rOpenSci Code of Conduct](https://ropensci.org/code-of-conduct/).
 
 ## Questions
 
-For general questions, open an [issue](https://github.com/RodoTasso/ciecl/issues) using the **Question** template, which applies the `question` label automatically.
+For general questions, open an [issue](https://github.com/ropensci/ciecl/issues) using the **Question** template, which applies the `question` label automatically.

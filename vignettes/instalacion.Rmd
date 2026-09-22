@@ -17,7 +17,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-Esta guía está pensada para personas que trabajan con bases de datos de salud y que quizás están recién aprendiendo R: para ellas, instalar un paquete desde GitHub con `pak` y configurar la API key de la OMS no son pasos obvios, así que aquí se explican con detalle. Si ya tienes experiencia con R, puedes saltarte esta viñeta: basta con `pak::pak("RodoTasso/ciecl")` para empezar.
+Esta guía está pensada para personas que trabajan con bases de datos de salud y que quizás están recién aprendiendo R: para ellas, instalar un paquete desde GitHub con `pak` y configurar la API key de la OMS no son pasos obvios, así que aquí se explican con detalle. Si ya tienes experiencia con R, puedes saltarte esta viñeta: basta con `pak::pak("ropensci/ciecl")` para empezar.
 
 ## Instalación
 
@@ -33,13 +33,13 @@ install.packages("ciecl")
 
 ```{r eval=FALSE}
 install.packages("pak")
-pak::pak("RodoTasso/ciecl")
+pak::pak("ropensci/ciecl")
 ```
 
 Para instalar además todas las dependencias opcionales (comorbilidades, tablas GT, API CIE-11):
 
 ```{r eval=FALSE}
-pak::pak("RodoTasso/ciecl", dependencies = TRUE)
+pak::pak("ropensci/ciecl", dependencies = TRUE)
 ```
 
 ### Dependencias por funcionalidad
@@ -216,5 +216,5 @@ ciecl::cie10_clear_cache()
 
 ## Soporte
 
-- Reportar problemas: <https://github.com/RodoTasso/ciecl/issues>
-- Documentación: <https://rodotasso.github.io/ciecl/>
+- Reportar problemas: <https://github.com/ropensci/ciecl/issues>
+- Documentación: <https://docs.ropensci.org/ciecl/>

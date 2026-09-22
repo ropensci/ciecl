@@ -39,7 +39,7 @@ To install the development version with the latest fixes:
 
 ```{r eval=FALSE}
 # Requires the pak package
-pak::pak("RodoTasso/ciecl")
+pak::pak("ropensci/ciecl")
 ```
 
 ## Direct SQL queries against the catalog
@@ -145,5 +145,5 @@ The data included in `ciecl` comes from the official ICD-10 catalog published by
 
 ## Collaboration and Support
 
-- Report issues or suggestions: <https://github.com/RodoTasso/ciecl/issues>
-- Package repository: <https://github.com/RodoTasso/ciecl>
+- Report issues or suggestions: <https://github.com/ropensci/ciecl/issues>
+- Package repository: <https://github.com/ropensci/ciecl>

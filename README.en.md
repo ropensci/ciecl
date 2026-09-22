@@ -1,6 +1,6 @@
 
 > **Language / Idioma:** **English** \|
-> [Español](https://github.com/RodoTasso/ciecl/blob/main/README.md)
+> [Español](https://github.com/ropensci/ciecl/blob/main/README.md)
 
 <!-- README generado desde README.Rmd. Editar este archivo, no los .md -->
 
@@ -15,11 +15,11 @@ stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://
 [![CRAN
 status](https://www.r-pkg.org/badges/version/ciecl)](https://CRAN.R-project.org/package=ciecl)
 [![GitHub
-release](https://img.shields.io/github/v/release/RodoTasso/ciecl)](https://github.com/RodoTasso/ciecl/releases)
-[![R-CMD-check](https://github.com/Rodotasso/ciecl/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/Rodotasso/ciecl/actions/workflows/R-CMD-check.yaml)
+release](https://img.shields.io/github/v/release/ropensci/ciecl)](https://github.com/ropensci/ciecl/releases)
+[![R-CMD-check](https://github.com/ropensci/ciecl/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/ropensci/ciecl/actions/workflows/R-CMD-check.yaml)
 [![Downloads](https://cranlogs.r-pkg.org/badges/grand-total/ciecl)](https://cran.r-project.org/package=ciecl)
-[![Coverage](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/Rodotasso/ciecl/main/badges/coverage.json)](https://github.com/Rodotasso/ciecl/actions/workflows/test-coverage.yaml)
-[![pkgdown](https://img.shields.io/badge/docs-pkgdown-blue)](https://rodotasso.github.io/ciecl/)
+[![Coverage](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/ropensci/ciecl/main/badges/coverage.json)](https://github.com/ropensci/ciecl/actions/workflows/test-coverage.yaml)
+[![pkgdown](https://img.shields.io/badge/docs-pkgdown-blue)](https://docs.ropensci.org/ciecl/)
 [![Status at rOpenSci Software Peer
 Review](https://badges.ropensci.org/765_status.svg)](https://github.com/ropensci/software-review/issues/765)
 <!-- badges: end -->
@@ -70,9 +70,12 @@ institutional decree.
 # CRAN
 install.packages("ciecl")
 
+# rOpenSci R-universe
+install.packages("ciecl", repos = c("https://ropensci.r-universe.dev", "https://cloud.r-project.org"))
+
 # GitHub (development)
 # install.packages("pak")
-pak::pak("RodoTasso/ciecl")
+pak::pak("ropensci/ciecl")
 ```
 
 ## Quick start
@@ -178,7 +181,7 @@ Official **CIE-10 MINSAL/DEIS v2018** catalogue:
 
 ## Contributing
 
-- Report bugs: <https://github.com/RodoTasso/ciecl/issues>
+- Report bugs: <https://github.com/ropensci/ciecl/issues>
 - Contribute: see [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ## License
@@ -197,7 +200,7 @@ of Chile.
 
 ## Links
 
-- Repository: <https://github.com/RodoTasso/ciecl>
+- Repository: <https://github.com/ropensci/ciecl>
 - DEIS MINSAL: <https://deis.minsal.cl>
 - ICD-11 API: <https://icd.who.int/icdapi>
 

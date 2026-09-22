@@ -13,9 +13,9 @@ Tools for working with the International Classification of Diseases ('ICD-10' Ch
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://rodotasso.github.io/ciecl/}
-  \item \url{https://github.com/Rodotasso/ciecl}
-  \item Report bugs at \url{https://github.com/Rodotasso/ciecl/issues}
+  \item \url{https://docs.ropensci.org/ciecl}
+  \item \url{https://github.com/ropensci/ciecl}
+  \item Report bugs at \url{https://github.com/ropensci/ciecl/issues}
 }
 
 }
@@ -30,6 +30,8 @@ Authors:
 Other contributors:
 \itemize{
   \item Francisca Jofre (Package logo design) [contributor]
+  \item Maëlle Salmon (Maëlle reviewed the package (v. 0.9.8) for rOpenSci, see <https://github.com/ropensci/software-review/issues/765>) [reviewer]
+  \item Yanina Bellini (Yanina reviewed the package (v. 0.9.8) for rOpenSci, see <https://github.com/ropensci/software-review/issues/765>) [reviewer]
 }
 
 }

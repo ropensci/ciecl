@@ -134,7 +134,7 @@ cie11_search <- function(text, api_key = get_icd_api_key(),
       )
 
       search_req <- httr2::request(search_url) |>
-        httr2::req_user_agent("ciecl (https://github.com/Rodotasso/ciecl)") |>
+        httr2::req_user_agent("ciecl (https://github.com/ropensci/ciecl)") |>
         httr2::req_timeout(30) |>
         httr2::req_retry(max_tries = 3) |>
         httr2::req_throttle(rate = 10 / 60) |> # 10 req/min para ser conservador

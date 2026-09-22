@@ -60,3 +60,4 @@ benchmark/diag1-codigos-reales.csv
 benchmark/*.parquet
 benchmark/datos/
 benchmark/data/
+_tmp_audit/

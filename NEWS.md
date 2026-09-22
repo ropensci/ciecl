@@ -1,6 +1,49 @@
-# ciecl 0.9.8 (en desarrollo, 2026-04-25 → 2026-09-16)
+# ciecl 1.0.0 (2026-09-22)
 
 *English summary below*
+
+Primera versión del paquete aprobada en la [revisión por pares de
+rOpenSci](https://github.com/ropensci/software-review/issues/765) y
+transferida a la organización [ropensci](https://github.com/ropensci/ciecl).
+El paquete se instala además desde el [R-universe de
+rOpenSci](https://ropensci.r-universe.dev) y su documentación se publica en
+<https://docs.ropensci.org/ciecl>.
+
+Cambios al usuario consolidados de la revisión:
+
+* **Validación de entradas inválidas**: las funciones públicas abortan con
+  errores tipados de clase `ciecl_invalid_input` (mensajes claros en lugar
+  de errores base de R): `cie_search()` valida `threshold`/`max_results`;
+  `cie_lookup()` exige `extract` escalar; `cie_expand()` valida `code` (con
+  `NA` abortando en lugar de retornar `character(0)` silenciosamente);
+  `cie_table()` exige un único código y rechaza `NA`; `cie_short()` valida
+  `category`; `cie_describe()` valida y coacciona `default`.
+* **Orden determinista en `cie_lookup()`**: el modo vector exacto
+  (`IN (...)`) ahora incluye `ORDER BY codigo`, igual que los demás caminos
+  de la función.
+* **Rangos inclusivos en `cie_lookup()`**: un rango como `"E10-E14"` ya no
+  excluye silenciosamente las subcategorías del límite superior.
+* **Robustez de `cie10_sql()`**: una consulta `SELECT` legítima que
+  comienza con un comentario ya no aborta como "no SELECT".
+* **`cie_search()` con texto de solo símbolos** (p. ej. `"!!"`): ya no
+  deriva en un error interno.
+
+*First package version approved at [rOpenSci peer
+review](https://github.com/ropensci/software-review/issues/765) and
+transferred to the [ropensci](https://github.com/ropensci/ciecl)
+organization. The package can also be installed from the [rOpenSci
+R-universe](https://ropensci.r-universe.dev) and its documentation is
+published at <https://docs.ropensci.org/ciecl>. Consolidated user-facing
+changes from the review: invalid inputs now abort with typed errors of
+class `ciecl_invalid_input` across public functions; `cie_lookup()` is
+deterministic (`ORDER BY codigo`) in exact vector mode and its ranges now
+include the upper limit's subcategories; `cie10_sql()` no longer rejects a
+legitimate `SELECT` starting with a comment; and `cie_search()` handles
+symbol-only text.*
+
+El ciclo de desarrollo previo (0.9.8 en desarrollo, 2026-04-25 →
+2026-09-16) se publica íntegramente como 1.0.0; su detalle se conserva en
+las secciones fechadas siguientes.
 
 ## Correcciones menores — nits de auditoría (2026-09-16)
 

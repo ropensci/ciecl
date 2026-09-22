@@ -4,17 +4,17 @@
   "identifier": "ciecl",
   "description": "Tools for working with the International Classification of Diseases ('ICD-10' Chile official 'MINSAL'/'DEIS' v2018). Includes optimized 'SQL' search with 'SQLite', fuzzy matching of medical terms ('Jaro-Winkler'), Charlson and Elixhauser comorbidity calculation, 'WHO' 'ICD-11' 'API' integration, and hierarchical code validation. Data from Centro FIC Chile 'DEIS' <https://deis.minsal.cl/centrofic/>.",
   "name": "ciecl: International Classification of Diseases 'ICD-10'/'ICD-11' for Chile",
-  "relatedLink": ["https://rodotasso.github.io/ciecl/", "https://CRAN.R-project.org/package=ciecl"],
-  "codeRepository": "https://github.com/Rodotasso/ciecl",
-  "issueTracker": "https://github.com/Rodotasso/ciecl/issues",
+  "relatedLink": ["https://docs.ropensci.org/ciecl", "https://CRAN.R-project.org/package=ciecl"],
+  "codeRepository": "https://github.com/ropensci/ciecl",
+  "issueTracker": "https://github.com/ropensci/ciecl/issues",
   "license": "https://spdx.org/licenses/MIT",
-  "version": "0.9.8",
+  "version": "1.0.0",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
     "url": "https://r-project.org"
   },
-  "runtimePlatform": "R version 4.6.1 (2026-06-24)",
+  "runtimePlatform": "R version 4.6.0 (2026-04-24 ucrt)",
   "provider": {
     "@id": "https://cran.r-project.org",
     "@type": "Organization",
@@ -286,7 +286,7 @@
     },
     "SystemRequirements": null
   },
-  "fileSize": "1468.864KB",
+  "fileSize": "2675.887KB",
   "citation": [
     {
       "@type": "SoftwareSourceCode",
@@ -301,13 +301,13 @@
         }
       ],
       "name": "ciecl: Clasificacion Internacional de Enfermedades CIE-10/11 para Chile",
-      "url": "https://github.com/Rodotasso/ciecl",
-      "description": "R package version 0.9.8. Grupo de Ciencia de Datos para Salud Publica, Escuela de Salud Publica, U. de Chile. Datos: MINSAL/DEIS v2018"
+      "url": "https://github.com/ropensci/ciecl",
+      "description": "R package version 1.0.0. Grupo de Ciencia de Datos para Salud Publica, Escuela de Salud Publica, U. de Chile. Datos: MINSAL/DEIS v2018"
     }
   ],
-  "releaseNotes": "https://github.com/Rodotasso/ciecl/blob/main/NEWS.md",
-  "readme": "https://github.com/Rodotasso/ciecl/blob/main/README.md",
-  "contIntegration": ["https://github.com/Rodotasso/ciecl/actions/workflows/R-CMD-check.yaml", "https://github.com/Rodotasso/ciecl/actions/workflows/test-coverage.yaml"],
+  "releaseNotes": "https://github.com/ropensci/ciecl/blob/main/NEWS.md",
+  "readme": "https://github.com/ropensci/ciecl/blob/main/README.md",
+  "contIntegration": ["https://github.com/ropensci/ciecl/actions/workflows/R-CMD-check.yaml", "https://github.com/ropensci/ciecl/actions/workflows/test-coverage.yaml"],
   "developmentStatus": "https://lifecycle.r-lib.org/articles/stages.html#stable",
   "review": {
     "@type": "Review",

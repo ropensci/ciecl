@@ -17,7 +17,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-This guide is written for people who work with health databases and may still be learning R: installing a package from GitHub with `pak` and setting up the WHO API key are not obvious steps for them, so they are explained here in detail. If you are already comfortable with R, you can skip this vignette: `pak::pak("RodoTasso/ciecl")` is all you need to get started.
+This guide is written for people who work with health databases and may still be learning R: installing a package from GitHub with `pak` and setting up the WHO API key are not obvious steps for them, so they are explained here in detail. If you are already comfortable with R, you can skip this vignette: `pak::pak("ropensci/ciecl")` is all you need to get started.
 
 ## Installation
 
@@ -33,13 +33,13 @@ install.packages("ciecl")
 
 ```{r eval=FALSE}
 install.packages("pak")
-pak::pak("RodoTasso/ciecl")
+pak::pak("ropensci/ciecl")
 ```
 
 To also install all optional dependencies (comorbidities, GT tables, ICD-11 API):
 
 ```{r eval=FALSE}
-pak::pak("RodoTasso/ciecl", dependencies = TRUE)
+pak::pak("ropensci/ciecl", dependencies = TRUE)
 ```
 
 ### Dependencies by feature
@@ -211,5 +211,5 @@ ciecl::cie10_clear_cache()
 
 ## Support
 
-- Report issues: <https://github.com/RodoTasso/ciecl/issues>
-- Documentation: <https://rodotasso.github.io/ciecl/>
+- Report issues: <https://github.com/ropensci/ciecl/issues>
+- Documentation: <https://docs.ropensci.org/ciecl/>
