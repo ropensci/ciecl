@@ -1,4 +1,0 @@
-# License
-
-    YEAR: 2025
-    COPYRIGHT HOLDER: Rodolfo Tasso Suazo
