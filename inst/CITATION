@@ -10,5 +10,6 @@ bibentry(
                     comment = "Package logo design")),
   year = 2026,
   note = "R package version 1.0.0. Grupo de Ciencia de Datos para Salud Publica, Escuela de Salud Publica, U. de Chile. Datos: MINSAL/DEIS v2018",
-  url = "https://github.com/ropensci/ciecl"
+  url = "https://github.com/ropensci/ciecl",
+  doi = "10.5281/zenodo.22906553"  # DOI concepto Zenodo (apunta siempre a la ultima version)
 )
