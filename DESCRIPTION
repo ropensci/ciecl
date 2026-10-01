@@ -51,7 +51,7 @@ Suggests:
     knitr,
     rmarkdown
 VignetteBuilder: knitr
-URL: https://docs.ropensci.org/ciecl,
+URL: https://docs.ropensci.org/ciecl/,
     https://github.com/ropensci/ciecl
 BugReports: https://github.com/ropensci/ciecl/issues
 Config/testthat/edition: 3

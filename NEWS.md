@@ -7,7 +7,7 @@ rOpenSci](https://github.com/ropensci/software-review/issues/765) y
 transferida a la organización [ropensci](https://github.com/ropensci/ciecl).
 El paquete se instala además desde el [R-universe de
 rOpenSci](https://ropensci.r-universe.dev) y su documentación se publica en
-<https://docs.ropensci.org/ciecl>.
+<https://docs.ropensci.org/ciecl/>.
 
 Cambios al usuario consolidados de la revisión:
 
@@ -33,7 +33,7 @@ review](https://github.com/ropensci/software-review/issues/765) and
 transferred to the [ropensci](https://github.com/ropensci/ciecl)
 organization. The package can also be installed from the [rOpenSci
 R-universe](https://ropensci.r-universe.dev) and its documentation is
-published at <https://docs.ropensci.org/ciecl>. Consolidated user-facing
+published at <https://docs.ropensci.org/ciecl/>. Consolidated user-facing
 changes from the review: invalid inputs now abort with typed errors of
 class `ciecl_invalid_input` across public functions; `cie_lookup()` is
 deterministic (`ORDER BY codigo`) in exact vector mode and its ranges now

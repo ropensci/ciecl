@@ -13,7 +13,7 @@ Tools for working with the International Classification of Diseases ('ICD-10' Ch
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://docs.ropensci.org/ciecl}
+  \item \url{https://docs.ropensci.org/ciecl/}
   \item \url{https://github.com/ropensci/ciecl}
   \item Report bugs at \url{https://github.com/ropensci/ciecl/issues}
 }

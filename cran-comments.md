@@ -1,42 +1,31 @@
-## Submission ciecl 0.9.8
+## Submission ciecl 1.0.0
 
-This is an update of ciecl (currently 0.9.2 on CRAN) with substantial
-improvements in performance, security, testing, and documentation.
-No user-facing breaking changes affecting the CRAN-published surface.
+This is an update of ciecl (currently 0.9.8 on CRAN). Version 1.0.0 is
+the first release after the package passed rOpenSci peer review
+(https://github.com/ropensci/software-review/issues/765) and was
+transferred to the ropensci organization. It consolidates the
+user-facing improvements made during the review; there are no breaking
+changes to the CRAN-published API surface.
 
-## Summary of changes since 0.9.2
+## Summary of changes since 0.9.8
 
-* **SQLite connection pooling** with atomic versioned cache in
-  `get_cie10_db()`. Reuses active connections and rebuilds the cache
-  when corrupted or outdated.
-* **Vectorized** `cie_map_comorbid()` and `cie_normalizar()` for
-  efficient batch processing.
-* **FTS5 input sanitization** against SQL injection, SQL comment
-  stripping, and stricter input validation on exported functions.
-* **pkgdown site** with dark mode (light-switch), hex logo, and
-  favicons.
-* **New vignettes**: `ciecl` (package overview) and
-  `case-study-discharges` (simulated hospital discharge data using
-  DEIS essential columns).
-* **Bilingual community files**: CONTRIBUTING.md, CODE_OF_CONDUCT.md,
-  SECURITY.md (English + Spanish).
-* **`@family` and `@seealso`** added across all exported functions.
-* **English-first documentation** with full Spanish translations.
-* **CI/CD**: multi-platform R-CMD-check (Windows, macOS, Ubuntu),
-  coverage workflow, automatic pkgdown deployment, R-hub workflow.
-* Pipe standardization to `%>%`, `codemeta.json` sync with DESCRIPTION,
-  removal of bundled `inst/extdata/cie10.db` (was causing a 21.3 MB
-  NOTE), cross-platform compatibility fixes.
+* **Typed input validation**: public functions abort with informative
+  errors of class `ciecl_invalid_input` instead of base R errors.
+* **Deterministic ordering** in `cie_lookup()` (explicit `ORDER BY`)
+  and inclusive upper bounds in code ranges such as `"E10-E14"`.
+* **Robustness fixes** in `cie10_sql()` (legitimate SELECTs starting
+  with a comment) and in `cie_search()` with symbol-only text.
+* Documentation site moved to <https://docs.ropensci.org/ciecl/>.
 
 Full changelog in NEWS.md.
 
 ## Test results
 
-* **Tests**: 1059 PASS, 0 FAIL, 0 WARN, 5 SKIP (devtools::test(),
-  R 4.6.0, 2026-09-16); coverage 97.39% (covr::package_coverage(),
-  2026-09-15).
-* **R CMD check**: 0 errors | 0 warnings | 0 notes locally; the 2 notes
-  below are expected CRAN incoming NOTEs only.
+* **Tests**: devtools::test() passes locally (R 4.6.0); see
+  tests/testthat.
+* **R CMD check --as-cran**: 0 errors | 0 warnings | 1 note on the
+  submitted tarball (Windows 11 x64, R 4.6.0); the note is a CRAN
+  incoming feasibility NOTE only, explained below.
 
 ### Skip ratio on CRAN (~58%)
 
@@ -52,11 +41,12 @@ writes outside tempdir.
 
 ### NOTEs explained
 
-1. **CRAN incoming feasibility — invalid URLs (HTTP 403)**:
-   The MINSAL/DEIS URLs in documentation return HTTP 403 when
-   accessed by automated tools due to anti-bot protection on Chilean
-   government servers. These URLs are valid and accessible via
-   regular browsers:
+1. **CRAN incoming feasibility — possibly invalid URL (HTTP 401)**:
+   https://www.bcn.cl/leychile/navegar?i=1112064 (in README.md) returns
+   HTTP 401 to automated checkers due to anti-bot protection on Chilean
+   government servers. The URL is valid and accessible via regular
+   browsers. The same applies to the MINSAL/DEIS URLs in the
+   documentation (HTTP 403 to automated tools):
    - https://deis.minsal.cl
    - https://deis.minsal.cl/centrofic/
    - https://repositoriodeis.minsal.cl
